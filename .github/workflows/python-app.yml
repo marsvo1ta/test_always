@@ -20,7 +20,7 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Deploy via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         ftp-server: ${{ secrets.HOST }}
         ftp-username: ${{ secrets.NAME }}
