@@ -22,8 +22,8 @@ jobs:
     - name: Deploy via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        ftp-server: ${{ secrets.HOST }}
-        ftp-username: ${{ secrets.NAME }}
-        ftp-password: ${{ secrets.PASS }}
+        server: ${{ secrets.HOST }}
+        username: ${{ secrets.NAME }}
+        password: ${{ secrets.PASS }}
         local-dir: ./  # каталог, що ви хочете завантажити
         server-dir: /www/test_git  # віддалений каталог, куди хочете завантажити файли
