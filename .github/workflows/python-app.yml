@@ -26,4 +26,4 @@ jobs:
         username: ${{ secrets.NAME }}
         password: ${{ secrets.PASS }}
         local-dir: ./  # каталог, що ви хочете завантажити
-        server-dir: /www/test_git  # віддалений каталог, куди хочете завантажити файли
+        server-dir: /www/test_git/  # віддалений каталог, куди хочете завантажити файли
